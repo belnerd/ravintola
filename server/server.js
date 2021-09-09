@@ -41,7 +41,7 @@ app.listen(port, () => {
   console.log("Server listening on port " + process.env.PORT);
 });
 
-// Allow cross origin resource sharing (without this the returned data is opaque)
+// Allow cross origin resource sharing (without this the returned data is opaque / other actions fail)
 let allowCrossDomain = function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "*");

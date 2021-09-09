@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import Header from "./components/Header";
 import MenuList from "./components/MenuList";
 import LoginModal from "./components/Login";
@@ -63,7 +64,7 @@ function App() {
     if (!openLogin) {
       setOpenLogin(true);
     } else {
-      if (sessionStorage.adminLogin === "1") {
+      if (sessionStorage.adminLogin === '1') {
         setIsAdminLoggedIn(true);
       }
       setOpenLogin(false);
@@ -73,7 +74,7 @@ function App() {
   // Handle the logout button
   const logoutClickHandler = () => {
     setIsAdminLoggedIn(false);
-    sessionStorage.adminLogin = 0
+    sessionStorage.adminLogin = '0'
   };
 
   // Handle menu item editing

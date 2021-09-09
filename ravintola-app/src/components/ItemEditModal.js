@@ -113,7 +113,7 @@ const ModalOverlay = (props) => {
       </header>
       <div className={classes.content}>
         <form className={classes.control} onSubmit={saveItemHandler}>
-          <label classhtmlFor="name">Item name</label>
+          <label htmlFor="name">Item name</label>
           <input
             id="name"
             type="text"
